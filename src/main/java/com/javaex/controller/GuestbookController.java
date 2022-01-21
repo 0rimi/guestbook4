@@ -30,7 +30,6 @@ public class GuestbookController {
 		
 		//리스트 출력을 위한 메소드사용
 		List<GuestbookVo> gbList = gbDao.getList();
-		System.out.println(gbList.toString());
 		
 		//보내주기위해 모델 사용
 		model.addAttribute("gbList", gbList);
